@@ -16,4 +16,14 @@ function createFunctionPrinter (input) {
 	return printing;
 }
 
-//
+// Challenge 3
+
+function outer () {
+	let counter = 0;
+	function incrementCounter() {
+		counter ++;
+		console.log('counter', counter);
+	}
+	return incrementCounter;
+}
+
