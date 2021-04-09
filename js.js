@@ -9,3 +9,11 @@ function createFunction () {
 
 // Challenge 2
 
+function createFunctionPrinter (input) {
+	function printing () {
+		console.log(input);
+	}
+	return printing;
+}
+
+//
