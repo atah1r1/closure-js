@@ -44,3 +44,14 @@ function once(func) {
   
   return innerFunction; 
 }
+
+// Challenge 5
+
+function moretimes(times, callback) {
+	let counter = 0;
+	function kk() {
+		counter++;
+	}
+	if (counter >= times)
+		return kk;
+}
