@@ -77,3 +77,20 @@ function rollCall(names) {
 	return logName;
 }
 
+// Challenge 8
+
+const saveOutput = (inputFunc, str) => {
+
+	let newObj = {}; 
+  
+	return function (value) {
+  
+	  if (value === str){     
+		return newObj;
+	  }
+	  else {
+		newObj[value] = inputFunc(value);
+		return inputFunc(value)
+	  }
+	}
+  }
