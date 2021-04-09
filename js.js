@@ -55,3 +55,10 @@ function moretimes(times, callback) {
 	if (counter >= times)
 		return kk;
 }
+
+// Challenge 6
+
+function delay(callback, wait) {
+	setTimeout(callback, wait);
+}
+
