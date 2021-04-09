@@ -27,3 +27,20 @@ function outer () {
 	return incrementCounter;
 }
 
+// Challenge 4
+
+function once(func) {
+	let counter = 0; 
+  let callOnlyOnce; 
+
+  function innerFunction(value) {
+    if (counter === 0) {
+      callOnlyOnce = func(value)
+    }
+    counter++;
+    
+    return callOnlyOnce; 
+  }
+  
+  return innerFunction; 
+}
