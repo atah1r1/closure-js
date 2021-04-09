@@ -62,3 +62,18 @@ function delay(callback, wait) {
 	setTimeout(callback, wait);
 }
 
+// Challenge 7
+
+function rollCall(names) {
+	let index = 0;
+	function logName() {
+		if (index >= names.length)
+			console.log('Everyone accounted for');
+		else {
+			console.log(names[index]);
+		}
+		index++;
+	}
+	return logName;
+}
+
