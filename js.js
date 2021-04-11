@@ -90,7 +90,7 @@ const saveOutput = (inputFunc, str) => {
 	  }
 	  else {
 		newObj[value] = inputFunc(value);
-		return inputFunc(value)
+		return inputFunc(value);
 	  }
 	}
   }

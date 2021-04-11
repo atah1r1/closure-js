@@ -1,6 +1,26 @@
-function timeout () {
-	console.log('Hello!');
+class Animal {
+	constructor (name) {
+		this.speed = 0;
+		this.name = name;
+	}
+	run(speed) {
+		this.speed = speed;
+		console.log(`${this.name} Runs with a speed of ${this.speed}`);
+	}
+	stop() {
+		this.speed = 0;
+		console.log(`${this.name} stands still.`);
+	}
 }
 
-setTimeout(timeout, 0);
-console.log('Me first !!');
+class Rabbit extends Animal {
+	hide () {
+		console.log(`${this.name} hides !`);
+	}
+}
+
+const animal = new Animal('Bob');
+const rabbit = new Rabbit('White Rabbit');
+
+rabbit.hide();
+// animal.hide();
