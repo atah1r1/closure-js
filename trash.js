@@ -17,10 +17,24 @@ class Rabbit extends Animal {
 	hide () {
 		console.log(`${this.name} hides !`);
 	}
+	stop () {
+		this.speed = 0;
+		console.log(`${this.name} stands still. from child`);
+	}
 }
 
 const animal = new Animal('Bob');
 const rabbit = new Rabbit('White Rabbit');
 
-rabbit.hide();
-// animal.hide();
+rabbit.stop();
+
+/// function that return a class
+
+function f(text) {
+	return class {
+		sayHi() {console.log(text)};
+	}
+}
+
+class User extends f('sdfsdf') {};
+ ////
