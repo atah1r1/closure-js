@@ -14,20 +14,22 @@ class Animal {
 }
 
 class Rabbit extends Animal {
+	constructor (name, earLength) {
+		super(name);
+		this.earLength = earLength;
+	}
 	hide () {
 		console.log(`${this.name} hides !`);
 	}
 	stop () {
-		super.stop();
-		this.hide();
+		setTimeout(() => super.stop(), 3000);
 	}
 }
 
 const animal = new Animal('Bob');
-const rabbit = new Rabbit('White Rabbit');
+const rabbit = new Rabbit('White Rabbit', 10);
 
-rabbit.stop();
-
+// rabbit.run(1000)
 /// function that return a class
 
 function f(text) {
@@ -36,5 +38,19 @@ function f(text) {
 	}
 }
 
-class User extends f('sdfsdf') {};
+class User extends f('test') {};
  ////
+
+class Cars {
+	name = 'audi';
+	constructor () {
+		console.log(this.name);
+	}
+}
+
+class Car extends Cars {
+	name = 'BMW';
+}
+
+// new Cars();
+// new Car();
