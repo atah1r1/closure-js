@@ -54,3 +54,21 @@ class Car extends Cars {
 
 // new Cars();
 // new Car();
+
+class Mouses {
+	constructor (name) {
+		this.name = name;
+	}
+}
+
+class Mouse extends Mouses {
+	date = new Date();
+	constructor (name) {
+		super(name);
+		this.created = this.date.getDate();
+	}
+}
+
+const tt = new Mouse('Moussy');
+
+console.log(tt.created);
