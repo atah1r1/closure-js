@@ -9,7 +9,7 @@ class Animal {
 	}
 	stop() {
 		this.speed = 0;
-		console.log(`${this.name} stands still.`);
+		console.log(`${this.name} stands still. `);
 	}
 }
 
@@ -18,8 +18,8 @@ class Rabbit extends Animal {
 		console.log(`${this.name} hides !`);
 	}
 	stop () {
-		this.speed = 0;
-		console.log(`${this.name} stands still. from child`);
+		super.stop();
+		this.hide();
 	}
 }
 
