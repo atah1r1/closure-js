@@ -71,4 +71,4 @@ class Mouse extends Mouses {
 
 const tt = new Mouse('Moussy');
 
-console.log(tt.created);
+// console.log(tt.created);
