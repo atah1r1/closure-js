@@ -43,8 +43,8 @@ class User extends f('test') {};
 
 class Cars {
 	name = 'audi';
-	constructor () {
-		console.log(this.name);
+	constructor (name) {
+		console.log(name);
 	}
 }
 
